@@ -17,7 +17,7 @@ requirements = [
     'six',
     'tendril-utils-core>=0.1.4',
     'tendril-dox-render>=0.1.2',
-    'tendril-utils-files>=0.1.1',
+    'tendril-utils-pdf>=0.1.1',
     'qrcode',
 ]
 
@@ -27,7 +27,7 @@ test_requirements = [
 
 setup(
     name='tendril-dox-labelmaker',
-    version='0.1.1',
+    version='0.1.2',
     description="Label generation infrastructure for tendril",
     long_description=readme,
     author="Chintalagiri Shashank",
