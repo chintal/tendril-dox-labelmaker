@@ -16,7 +16,7 @@ with open('README.rst') as readme_file:
 requirements = [
     'six',
     'tendril-utils-core>=0.1.4',
-    'tendril-dox-render>=0.1.2',
+    'tendril-dox-render>=0.1.3',
     'tendril-utils-pdf>=0.1.1',
     'qrcode',
 ]
@@ -27,7 +27,7 @@ test_requirements = [
 
 setup(
     name='tendril-dox-labelmaker',
-    version='0.1.2',
+    version='0.1.3',
     description="Label generation infrastructure for tendril",
     long_description=readme,
     author="Chintalagiri Shashank",

@@ -23,9 +23,9 @@ import os
 import atexit
 import qrcode
 from six.moves import cPickle
+from tendril.utils import log
 
 from tendril.dox import render
-from tendril.utils import log
 from tendril.utils.config import COMPANY_LOGO_PATH
 from tendril.utils.config import COMPANY_NAME
 from tendril.utils.config import INSTANCE_CACHE
