@@ -26,9 +26,9 @@ from six.moves import cPickle
 from tendril.utils import log
 
 from tendril.dox import render
-from tendril.utils.config import COMPANY_LOGO_PATH
-from tendril.utils.config import COMPANY_NAME
-from tendril.utils.config import INSTANCE_CACHE
+from tendril.config.legacy import COMPANY_LOGO_PATH
+from tendril.config.legacy import COMPANY_NAME
+from tendril.config.legacy import INSTANCE_CACHE
 from tendril.utils.fsutils import TEMPDIR
 from tendril.utils.files.pdf import merge_pdf
 
