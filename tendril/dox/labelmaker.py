@@ -28,7 +28,7 @@ from tendril.utils import log
 from tendril.dox import render
 from tendril.config.legacy import COMPANY_LOGO_PATH
 from tendril.config.legacy import COMPANY_NAME
-from tendril.config.legacy import INSTANCE_CACHE
+from tendril.config import INSTANCE_CACHE
 from tendril.utils.fsutils import TEMPDIR
 from tendril.utils.files.pdf import merge_pdf
 
