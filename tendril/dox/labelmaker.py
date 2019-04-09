@@ -26,8 +26,7 @@ from six.moves import cPickle
 from tendril.utils import log
 
 from tendril.dox import render
-from tendril.config.legacy import COMPANY_LOGO_PATH
-from tendril.config.legacy import COMPANY_NAME
+from tendril.identity import primary_persona
 from tendril.config import INSTANCE_CACHE
 from tendril.utils.fsutils import TEMPDIR
 from tendril.utils.files.pdf import merge_pdf
@@ -42,19 +41,15 @@ class LabelBase(object):
 
     templatefile = None
 
-    def __init__(self, code, ident, sno, branding=None, logo=None,
+    def __init__(self, code, ident, sno, branding=None,
                  include_qr=True, include_logo=True):
         self._code = code
         self._sno = sno
         self._ident = ident
         if branding is None:
-            self._branding = COMPANY_NAME
-        else:
-            self._branding = branding
-        if logo is None and include_logo is True:
-            self._logo = COMPANY_LOGO_PATH
-        else:
-            self._logo = logo
+            branding = primary_persona
+        self._branding = branding.name
+        self._logo = branding.logo
         self._include_qr = include_qr
         self._include_logo = include_logo
         self._qr_path = None
