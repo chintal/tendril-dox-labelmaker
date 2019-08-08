@@ -26,7 +26,7 @@ from six.moves import cPickle
 from tendril.utils import log
 
 from tendril.dox import render
-from tendril.identity import primary_persona
+from tendril.identity.persona import primary_persona
 from tendril.config import INSTANCE_CACHE
 from tendril.utils.fsutils import TEMPDIR
 from tendril.utils.files.pdf import merge_pdf

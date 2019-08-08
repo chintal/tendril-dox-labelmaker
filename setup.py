@@ -28,7 +28,7 @@ test_requirements = [
 
 setup(
     name='tendril-dox-labelmaker',
-    version='0.1.6',
+    version='0.1.7',
     description="Label generation infrastructure for tendril",
     long_description=readme,
     author="Chintalagiri Shashank",
