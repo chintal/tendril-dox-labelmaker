@@ -10,4 +10,4 @@ recursive-exclude * *.py[co]
 
 recursive-include docs *.rst conf.py Makefile make.bat
 
-recursive-include dox/templates/labels/*.template.tex
+recursive-include dox/templates *.tex
